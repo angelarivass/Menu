@@ -2003,9 +2003,6 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel39">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\angel\OneDrive\Documents\NetBeansProjects\menup\src\main\java\imagenes\bouleslogo (1).jpg"/>
-        </Property>
         <Property name="toolTipText" type="java.lang.String" value="imagen"/>
       </Properties>
     </Component>

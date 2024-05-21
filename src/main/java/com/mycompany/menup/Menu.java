@@ -16,11 +16,17 @@ import javax.swing.JOptionPane;
 public class Menu extends javax.swing.JFrame {
         double cant = 0;
         double precioFinal= 0;
+        Restaurante r;
     /**
      * Creates new form Menu
      */
-    public Menu() {
+                
+    public Menu(){
         initComponents();
+    }
+    public Menu(Restaurante r) {
+        initComponents();
+        this.r = r;
         sopa.setText("0");
         calabaza.setText("0");
         alcachofa.setText("0");
@@ -2243,12 +2249,10 @@ nieve.setText(String.valueOf(suma));
        
        double cuenta = sopa.getPrecio()+alcachofa.getPrecio()+quesadilla.getPrecio()+ensalada.getPrecio()+calabaza.getPrecio()+tacosHui.getPrecio()+pizza.getPrecio()+hongo.getPrecio()+pastaTomate.getPrecio()+pastaMar.getPrecio()+rissottoAlcachofa.getPrecio()+rissottoParm.getPrecio()+pez.getPrecio()+lomo.getPrecio()+newYork.getPrecio()+ribEye.getPrecio()+ceviche.getPrecio()+pulpo.getPrecio()+ostion.getPrecio()+tacoBetabel.getPrecio()+tacoArrachera.getPrecio()+carpaccio.getPrecio()+brownie.getPrecio()+flan.getPrecio()+cheesecake.getPrecio()+nieve.getPrecio();
        
-       Confirmar c = new Confirmar();
+       Confirmar c = new Confirmar(r);
        c.setVisible(true);
        setVisible(false);
        
-       Restaurante rest = new Restaurante();
-       //rest.agregarOrden(ordenes);
        c.setUpOrdenes(ordenes);
        
        

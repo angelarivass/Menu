@@ -3,36 +3,48 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.menup;
-
+import java.util.concurrent.*;
 import Clases.Cuenta;
 import Clases.Orden;
 import Clases.Productos;
 import Clases.Restaurante;
+import javax.swing.JOptionPane;
 
-
+//
 /**
  *
  * @author angel
  */
 public class Confirmar extends javax.swing.JFrame{
+    
+    private double total;
+    Restaurante r;
+    
 
     /**
      * Creates new form Confirmar
      */
-    public Confirmar() {
+    public Confirmar(Restaurante r) {
         initComponents();
+        this.r = r;
+    }
+    public Confirmar(){
+    initComponents();
     }
         public void setUpOrdenes(Orden o){
-            Orden h = new Orden();
-            Productos p = null; 
+           // Orden h = new Orden();
+            Productos p; 
             StringBuilder ord = new StringBuilder();
+            
             
 //for(Productos u:o.getProductos().size()){
     
 
-            for(int i=0;i<o.getProductos().size()-1;i++){
+            for(int i=0;i<o.getProductos().size();i++){
+        //sumar totdos prod en total
         
               p= o.getProductos().get(i);
+              total+=p.getPrecio();
                  if(p.getCantidad()!=0){
               ord.append("producto: " + p.getNombre()).append(" ("+p.getCantidad()+")").append("\n").append(" costo: " +p.getPrecio()).append("\n");
               
@@ -146,6 +158,15 @@ public class Confirmar extends javax.swing.JFrame{
 
     private void enviarOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarOrdenActionPerformed
         Cuenta cuenta = new Cuenta();
+        Orden orden = new Orden();
+        
+        //orden.agregarProducto(sopa);
+       // r.agregarListaOrdenes(orden); (lo movi abajo)
+        
+        JOptionPane.showMessageDialog(null, "Orden confirmada, su total es de: $"+ total+"\n"+"Nos vemos pronto!");
+        r.agregarListaOrdenes(orden);
+        
+        
 //        cuenta.imprimirCuenta(cuenta);
     }//GEN-LAST:event_enviarOrdenActionPerformed
 
