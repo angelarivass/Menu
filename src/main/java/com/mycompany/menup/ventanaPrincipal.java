@@ -194,7 +194,11 @@ Restaurante rest;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-       JOptionPane.showMessageDialog(null, "Las ordenes son"+"\n"+rest.getListaOrdenes().size());
+      // JOptionPane.showMessageDialog(null, "Las ordenes son"+"\n"+rest.getListaOrdenes().size());
+      VerOrdenes v = new VerOrdenes();
+      v.setVisible(true);
+      
+             
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
