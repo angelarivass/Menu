@@ -1,5 +1,4 @@
-
-import gui.ventanaPrincipal;
+package Default;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -10,7 +9,6 @@ import gui.ventanaPrincipal;
  *
  * @author angel
  */
-//public class menup {
-    //ventanaPrincipal ventana = new ventanaPrincipal();
+public class menup {
     
-//}
+}
