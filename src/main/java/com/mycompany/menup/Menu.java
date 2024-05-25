@@ -7,22 +7,29 @@ package com.mycompany.menup;
 import Clases.Orden;
 import Clases.Productos;
 import Clases.Restaurante;
+
 import javax.swing.JOptionPane;
+import Clases.RestauranteGlobal;
+
 
 /**
  *
  * @author angel
  */
 public class Menu extends javax.swing.JFrame {
+    //RestauranteGlobal rest;
+    Restaurante r;
         double cant = 0;
         double precioFinal= 0;
-        Restaurante r;
+        //Restaurante r;
     /**
      * Creates new form Menu
      */
                 
     public Menu(){
         initComponents();
+        
+        r = RestauranteGlobal.getR();
     }
     public Menu(Restaurante r) {
         initComponents();
@@ -2249,7 +2256,7 @@ nieve.setText(String.valueOf(suma));
        
        double cuenta = sopa.getPrecio()+alcachofa.getPrecio()+quesadilla.getPrecio()+ensalada.getPrecio()+calabaza.getPrecio()+tacosHui.getPrecio()+pizza.getPrecio()+hongo.getPrecio()+pastaTomate.getPrecio()+pastaMar.getPrecio()+rissottoAlcachofa.getPrecio()+rissottoParm.getPrecio()+pez.getPrecio()+lomo.getPrecio()+newYork.getPrecio()+ribEye.getPrecio()+ceviche.getPrecio()+pulpo.getPrecio()+ostion.getPrecio()+tacoBetabel.getPrecio()+tacoArrachera.getPrecio()+carpaccio.getPrecio()+brownie.getPrecio()+flan.getPrecio()+cheesecake.getPrecio()+nieve.getPrecio();
        
-       Confirmar c = new Confirmar(r);
+       Confirmar c = new Confirmar();
        c.setVisible(true);
        setVisible(false);
        

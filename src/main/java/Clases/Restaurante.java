@@ -29,7 +29,7 @@ public class Restaurante {
      public void eliminarListaOrdenes(Orden listaOrdenes){
          this.getListaOrdenes().remove(listaOrdenes);
     }
-    public ArrayList getListaOrdenes(){
+    public ArrayList<Orden> getListaOrdenes(){
         return listaOrdenes;
     }
 

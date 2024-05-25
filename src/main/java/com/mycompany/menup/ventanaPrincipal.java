@@ -6,6 +6,9 @@ package com.mycompany.menup;
 
 import Clases.Orden;
 import Clases.Restaurante;
+import Clases.RestauranteGlobal;
+import Default.sobreBoules;
+import Default.vistaMenu;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
@@ -17,18 +20,20 @@ import javax.swing.JTextArea;
  * @author angel
  */
 public class ventanaPrincipal extends javax.swing.JFrame {
-Restaurante rest;
+   RestauranteGlobal rest = new RestauranteGlobal();
+    Restaurante r;
+//Restaurante rest;
     /**
      * Creates new form ventanaPrincipal
      */
     public ventanaPrincipal() {
-        
+        this.r =rest.getR();
         initComponents();
-        rest = new Restaurante();
-    rest.getOrdene();
-    ArrayList<Orden> listaOrdenes = new ArrayList<Orden>();
+                
+//    r.getOrdene();
+//    ArrayList<Orden> listaOrdenes = new ArrayList<Orden>();
     
-    rest.setListaOrdenes(listaOrdenes);
+//    r.setListaOrdenes(listaOrdenes);
     }
 
     /**
@@ -153,7 +158,9 @@ Restaurante rest;
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+       sobreBoules s = new sobreBoules();
+       s.setVisible(true);
+        /*  setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Boules");
         setSize(400, 350);
         setLocationRelativeTo(null); //Centrar la ventana
@@ -175,16 +182,18 @@ Restaurante rest;
 
         
         JOptionPane.showMessageDialog(this, scrollPane);
+        */
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        MenuVistaa menu = new MenuVistaa();
-        menu.setVisible(true);
+       // MenuVistaa menu = new MenuVistaa();
+       vistaMenu menu = new vistaMenu(); 
+       menu.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-       Menu m = new Menu(rest);
+       Menu m = new Menu(r);
        m.setVisible(true);
        //setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed

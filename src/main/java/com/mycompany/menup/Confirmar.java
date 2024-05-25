@@ -8,6 +8,7 @@ import Clases.Cuenta;
 import Clases.Orden;
 import Clases.Productos;
 import Clases.Restaurante;
+import Clases.RestauranteGlobal;
 import javax.swing.JOptionPane;
 
 //
@@ -18,24 +19,27 @@ import javax.swing.JOptionPane;
 public class Confirmar extends javax.swing.JFrame{
     
     private double total;
+    
     Restaurante r;
     
 
     /**
      * Creates new form Confirmar
      */
-    public Confirmar(Restaurante r) {
+    public Confirmar() {
         initComponents();
-        this.r = r;
+        
+        r = RestauranteGlobal.getR();
+        //this.r = rget
     }
-    public Confirmar(){
-    initComponents();
-    }
-        public void setUpOrdenes(Orden o){
+   
+        public  void setUpOrdenes(Orden o){
            // Orden h = new Orden();
             Productos p; 
             StringBuilder ord = new StringBuilder();
-            
+           
+             r.getListaOrdenes().add(o);
+                        RestauranteGlobal.setR(r);
             
 //for(Productos u:o.getProductos().size()){
     
@@ -74,6 +78,7 @@ public class Confirmar extends javax.swing.JFrame{
         cuentaTotal = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         enviarOrden = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -136,13 +141,25 @@ public class Confirmar extends javax.swing.JFrame{
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
+        jButton1.setText("atras");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(135, 135, 135)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jButton1)))
                 .addContainerGap(165, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -150,7 +167,9 @@ public class Confirmar extends javax.swing.JFrame{
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addGap(80, 80, 80)
+                .addComponent(jButton1)
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         pack();
@@ -162,13 +181,22 @@ public class Confirmar extends javax.swing.JFrame{
         
         //orden.agregarProducto(sopa);
        // r.agregarListaOrdenes(orden); (lo movi abajo)
-        
+       
+
         JOptionPane.showMessageDialog(null, "Orden confirmada, su total es de: $"+ total+"\n"+"Nos vemos pronto!");
-        r.agregarListaOrdenes(orden);
         
+        System.out.println(orden);
+        System.out.println(orden.getProductos());
+        //System.out.println(orden);
+                       
+
         
 //        cuenta.imprimirCuenta(cuenta);
     }//GEN-LAST:event_enviarOrdenActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -208,6 +236,7 @@ public class Confirmar extends javax.swing.JFrame{
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea cuentaTotal;
     private javax.swing.JButton enviarOrden;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
