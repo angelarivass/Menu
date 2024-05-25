@@ -26,5 +26,5 @@ public class Cuenta extends Restaurante{
 
 //    public ArrayList<Orden> imprimirCuenta (Restaurante restaurante){
 ////        return restaurante.getOrdenes();
-//    }
+//   }
 }

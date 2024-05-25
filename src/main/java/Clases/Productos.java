@@ -36,9 +36,7 @@ public class Productos {
         this.cantidad = cantidad;
     }
 
-    private String nombre;
     
-    private double precio;
 
     public Productos(String nombre, double precio, int cantidad) {
         this.nombre = nombre;
@@ -47,6 +45,9 @@ public class Productos {
     }
 
     private int cantidad;
+    private String nombre;
+    
+    private double precio;
 
 
 }

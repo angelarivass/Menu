@@ -4,12 +4,16 @@
  */
 package Clases;
 
-
+import java.util.ArrayList;
 public class Restaurante {
     private Orden ordene;
+    
+    private ArrayList<Orden> listaOrdenes;
 
     public Restaurante() {
         ordene = new Orden();
+        listaOrdenes = new ArrayList<>();
+        
     }
 
 //    public void agregarOrden(Orden orden) {
@@ -18,6 +22,22 @@ public class Restaurante {
 
     public  Orden getOrdene() {
         return ordene;
+    }
+    public void agregarListaOrdenes(Orden listaOrdenes){
+        this.getListaOrdenes().add(listaOrdenes);
+    }
+     public void eliminarListaOrdenes(Orden listaOrdenes){
+         this.getListaOrdenes().remove(listaOrdenes);
+    }
+    public ArrayList<Orden> getListaOrdenes(){
+        return listaOrdenes;
+    }
+
+    /**
+     * @param listaOrdenes the listaOrdenes to set
+     */
+    public void setListaOrdenes(ArrayList<Orden> listaOrdenes) {
+        this.listaOrdenes = listaOrdenes;
     }
 }
 
