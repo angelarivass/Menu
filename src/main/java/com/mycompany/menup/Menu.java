@@ -236,11 +236,11 @@ public class Menu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
         confirmar = new javax.swing.JButton();
         atras = new javax.swing.JButton();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
 
         jTextField1.setText("jTextField1");
 
@@ -603,6 +603,9 @@ public class Menu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(java.awt.SystemColor.controlHighlight);
+
         jLabel2.setFont(new java.awt.Font("Bahnschrift", 0, 15)); // NOI18N
         jLabel2.setText("PLATILLOS");
 
@@ -611,6 +614,7 @@ public class Menu extends javax.swing.JFrame {
 
         sopa.setEditable(false);
         sopa.setBackground(new java.awt.Color(235, 235, 235));
+        sopa.setForeground(java.awt.SystemColor.controlHighlight);
         sopa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sopaActionPerformed(evt);
@@ -624,33 +628,41 @@ public class Menu extends javax.swing.JFrame {
         jLabel14.setText("Alcachofa                $90");
 
         alcachofa.setBackground(new java.awt.Color(235, 235, 235));
+        alcachofa.setForeground(java.awt.SystemColor.controlHighlight);
 
         jLabel15.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel15.setText("Quesadillas Brie     $110");
 
         quesadilla.setBackground(new java.awt.Color(235, 235, 235));
+        quesadilla.setForeground(java.awt.SystemColor.controlHighlight);
 
-        ensalada.setBackground(new java.awt.Color(235, 235, 235));
+        ensalada.setEditable(true);
+        ensalada.setBackground(java.awt.SystemColor.controlHighlight);
+        ensalada.setForeground(java.awt.SystemColor.controlHighlight);
 
         jLabel16.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel16.setText("Calabazas asadas           $110");
 
         calabaza.setBackground(new java.awt.Color(235, 235, 235));
+        calabaza.setForeground(java.awt.SystemColor.controlHighlight);
 
         jLabel17.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel17.setText("Tacos de huitlacoche      $130");
 
         tacosHui.setBackground(new java.awt.Color(235, 235, 235));
+        tacosHui.setForeground(java.awt.SystemColor.controlHighlight);
 
         jLabel18.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel18.setText("Pita pizza con hongos     $125");
 
         pizza.setBackground(new java.awt.Color(235, 235, 235));
+        pizza.setForeground(java.awt.SystemColor.controlHighlight);
 
         jLabel19.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel19.setText("Hongos capeados           $105");
 
         hongo.setBackground(new java.awt.Color(235, 235, 235));
+        hongo.setForeground(java.awt.SystemColor.controlHighlight);
         hongo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hongoActionPerformed(evt);
@@ -663,6 +675,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel21.setText("Pasta de tomate     $160");
 
+        pastaTomate.setBackground(java.awt.SystemColor.controlHighlight);
         pastaTomate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pastaTomateActionPerformed(evt);
@@ -672,6 +685,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel22.setText("Pasta del mar         $195");
 
+        pastaMar.setBackground(java.awt.SystemColor.controlHighlight);
         pastaMar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pastaMarActionPerformed(evt);
@@ -681,57 +695,89 @@ public class Menu extends javax.swing.JFrame {
         jLabel23.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel23.setText("Rissotto alcachofa $220");
 
+        rissottoAlcachofa.setBackground(java.awt.SystemColor.controlHighlight);
+
         jLabel24.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel24.setText("Rissotto parm        $200");
+
+        rissottoParm.setBackground(java.awt.SystemColor.controlHighlight);
 
         jLabel25.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel25.setText("Pez del dia              $210");
 
+        pez.setBackground(java.awt.SystemColor.controlHighlight);
+
         jLabel12.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel12.setText("Lomo de cerdo       $225 ");
+
+        lomo.setBackground(java.awt.SystemColor.controlHighlight);
 
         jLabel26.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel26.setText("New York               $370");
 
+        newYork.setBackground(java.awt.SystemColor.controlHighlight);
+
         jLabel27.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel27.setText("Prime Rib Eye                $950");
+
+        ribEye.setBackground(java.awt.SystemColor.controlHighlight);
 
         jLabel28.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel28.setText("Ceviche                          $190");
 
+        ceviche.setBackground(java.awt.SystemColor.controlHighlight);
+
         jLabel29.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel29.setText("Pulpo al cilantro            $190");
+
+        pulpo.setBackground(java.awt.SystemColor.controlHighlight);
 
         jLabel30.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel30.setText("Ostiones                        $180");
 
+        ostion.setBackground(java.awt.SystemColor.controlHighlight);
+
         jLabel31.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel31.setText("Tacos de betabel           $140");
+
+        tacosBet.setBackground(java.awt.SystemColor.controlHighlight);
 
         jLabel32.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel32.setText("Tacos de arrachera       $190");
 
+        tacosArra.setBackground(java.awt.SystemColor.controlHighlight);
+
         jLabel33.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel33.setText("Carpaccio de res           $240");
+
+        carpaccio.setBackground(java.awt.SystemColor.controlHighlight);
 
         jLabel34.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel34.setText("Brownie                $95");
 
+        brownie.setBackground(java.awt.SystemColor.controlHighlight);
+
         jLabel35.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel35.setText("Flan                       $95");
+
+        flan.setBackground(java.awt.SystemColor.controlHighlight);
 
         jLabel36.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel36.setText("Cheesecake                 $95");
 
+        cheesecake.setBackground(java.awt.SystemColor.controlHighlight);
         cheesecake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cheesecakeActionPerformed(evt);
             }
         });
 
+        nieve.setBackground(java.awt.SystemColor.controlHighlight);
+
         jLabel37.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
         jLabel37.setText("Nieve de vainilla         $95");
 
+        jButton2.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton2.setText("+");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -739,6 +785,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton3.setText("-");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -754,6 +801,7 @@ public class Menu extends javax.swing.JFrame {
 
         jSeparator6.setForeground(new java.awt.Color(115, 175, 195));
 
+        jButton4.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton4.setText("+");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -761,6 +809,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton5.setText("+");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -768,6 +817,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton6.setText("+");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -775,6 +825,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton7.setText("-");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -782,6 +833,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setBackground(new java.awt.Color(0, 0, 51));
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("+");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -789,6 +842,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton9.setBackground(new java.awt.Color(0, 0, 51));
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("+");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -796,6 +851,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton10.setBackground(new java.awt.Color(0, 0, 51));
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setText("+");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -803,6 +860,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton11.setBackground(new java.awt.Color(0, 0, 51));
+        jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("+");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -810,6 +869,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton12.setBackground(new java.awt.Color(0, 0, 51));
         jButton12.setText("+");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -817,6 +877,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton13.setBackground(new java.awt.Color(0, 0, 51));
         jButton13.setText("+");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -824,6 +885,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton14.setBackground(new java.awt.Color(0, 0, 51));
         jButton14.setText("+");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -831,6 +893,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton15.setBackground(new java.awt.Color(0, 0, 51));
         jButton15.setText("+");
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -838,6 +901,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton16.setBackground(new java.awt.Color(0, 0, 51));
         jButton16.setText("+");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -845,6 +909,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton17.setBackground(new java.awt.Color(0, 0, 51));
         jButton17.setText("+");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -852,6 +917,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton18.setBackground(new java.awt.Color(0, 0, 51));
         jButton18.setText("+");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -859,6 +925,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton19.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton19.setText("+");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -866,6 +933,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton20.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton20.setText("+");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -873,6 +941,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton21.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton21.setText("+");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -880,6 +949,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton22.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton22.setText("+");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -887,6 +957,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton23.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton23.setText("+");
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -894,6 +965,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton24.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton24.setText("+");
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -901,6 +973,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton25.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton25.setText("+");
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -908,6 +981,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton26.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton26.setText("+");
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -915,6 +989,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton27.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton27.setText("+");
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -922,6 +997,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton28.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton28.setText("+");
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -929,6 +1005,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton29.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton29.setText("+");
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -936,6 +1013,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton30.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton30.setText("-");
         jButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -943,6 +1021,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton31.setBackground(new java.awt.Color(0, 0, 51));
+        jButton31.setForeground(new java.awt.Color(255, 255, 255));
         jButton31.setText("-");
         jButton31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -950,6 +1030,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton32.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton32.setText("-");
         jButton32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -957,6 +1038,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton33.setBackground(new java.awt.Color(0, 0, 51));
+        jButton33.setForeground(new java.awt.Color(255, 255, 255));
         jButton33.setText("-");
         jButton33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -964,6 +1047,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton34.setBackground(new java.awt.Color(0, 0, 51));
+        jButton34.setForeground(new java.awt.Color(255, 255, 255));
         jButton34.setText("-");
         jButton34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -971,6 +1056,8 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton35.setBackground(new java.awt.Color(0, 0, 51));
+        jButton35.setForeground(new java.awt.Color(255, 255, 255));
         jButton35.setText("-");
         jButton35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -978,6 +1065,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton36.setBackground(new java.awt.Color(0, 0, 51));
         jButton36.setText("-");
         jButton36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -985,6 +1073,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton37.setBackground(new java.awt.Color(0, 0, 51));
         jButton37.setText("-");
         jButton37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -992,6 +1081,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton38.setBackground(new java.awt.Color(0, 0, 51));
         jButton38.setText("-");
         jButton38.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -999,6 +1089,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton39.setBackground(new java.awt.Color(0, 0, 51));
         jButton39.setText("-");
         jButton39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1006,6 +1097,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton40.setBackground(new java.awt.Color(0, 0, 51));
         jButton40.setText("-");
         jButton40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1013,6 +1105,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton41.setBackground(new java.awt.Color(0, 0, 51));
         jButton41.setText("-");
         jButton41.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1020,6 +1113,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton42.setBackground(new java.awt.Color(0, 0, 51));
         jButton42.setText("-");
         jButton42.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1027,6 +1121,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton43.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton43.setText("-");
         jButton43.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1034,6 +1129,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton44.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton44.setText("-");
         jButton44.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1041,6 +1137,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton45.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton45.setText("-");
         jButton45.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1048,6 +1145,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton46.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton46.setText("-");
         jButton46.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1055,6 +1153,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton47.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton47.setText("-");
         jButton47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1062,6 +1161,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton48.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton48.setText("-");
         jButton48.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1069,6 +1169,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton49.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton49.setText("-");
         jButton49.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1076,6 +1177,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton50.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton50.setText("-");
         jButton50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1083,6 +1185,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton51.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton51.setText("-");
         jButton51.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1090,6 +1193,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton52.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton52.setText("-");
         jButton52.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1097,6 +1201,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jButton53.setBackground(java.awt.SystemColor.activeCaptionBorder);
         jButton53.setText("-");
         jButton53.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1110,6 +1215,25 @@ public class Menu extends javax.swing.JFrame {
         jSeparator1.setForeground(new java.awt.Color(115, 175, 195));
 
         jSeparator2.setForeground(new java.awt.Color(115, 175, 195));
+
+        confirmar.setFont(new java.awt.Font("Tw Cen MT Condensed", 0, 18)); // NOI18N
+        confirmar.setText("Confirmar");
+        confirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                confirmarActionPerformed(evt);
+            }
+        });
+
+        atras.setFont(new java.awt.Font("Tw Cen MT Condensed", 0, 18)); // NOI18N
+        atras.setText("Atrás");
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+
+        jLabel38.setFont(new java.awt.Font("Bahnschrift", 0, 15)); // NOI18N
+        jLabel38.setText("BEBIDAS");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1163,102 +1287,100 @@ public class Menu extends javax.swing.JFrame {
                                     .addComponent(jButton7))))
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel21)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton43)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(pastaTomate, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton19)
+                                .addGap(12, 12, 12))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(23, 23, 23)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jSeparator4)
+                                .addGap(59, 59, 59))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel21)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jButton43)
-                                        .addGap(5, 5, 5)
-                                        .addComponent(pastaTomate, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(jLabel22)
-                                                        .addGap(12, 12, 12)
-                                                        .addComponent(jButton44))
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(jButton45)))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addComponent(pastaMar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(rissottoAlcachofa, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(jLabel26)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(jButton49))
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(jLabel12)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(jButton48))
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                            .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                            .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                                .addComponent(jButton46))
-                                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(jButton47)))))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(lomo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                                    .addComponent(pez, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                                    .addComponent(rissottoParm, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                                    .addComponent(newYork, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))))
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGap(23, 23, 23)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jButton50))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addComponent(jLabel35)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addComponent(jButton51)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(brownie, javax.swing.GroupLayout.PREFERRED_SIZE, 30, Short.MAX_VALUE)
-                                            .addComponent(flan, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jSeparator4)
-                                .addGap(59, 59, 59)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(brownie, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jButton25))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(flan, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jButton26))))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabel26)
+                                                .addGap(11, 11, 11)
+                                                .addComponent(jButton49))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                    .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jButton47)
+                                                    .addComponent(jButton46)))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabel12)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jButton48)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(lomo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                            .addComponent(pez, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(newYork, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton23)
+                                            .addComponent(jButton24)
+                                            .addComponent(jButton29)))
+                                    .addComponent(atras)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(rissottoAlcachofa, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                                    .addComponent(jLabel22)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(jButton44)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(pastaMar, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jButton45))
+                                            .addComponent(rissottoParm, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton20)
+                                            .addComponent(jButton21)
+                                            .addComponent(jButton22))))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton19)
-                                    .addComponent(jButton20)
-                                    .addComponent(jButton21)
-                                    .addComponent(jButton22)
-                                    .addComponent(jButton23)
-                                    .addComponent(jButton24)
-                                    .addComponent(jButton25)
-                                    .addComponent(jButton26)
-                                    .addComponent(jButton29))
-                                .addGap(23, 23, 23)
+                                .addGap(46, 46, 46)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -1363,12 +1485,29 @@ public class Menu extends javax.swing.JFrame {
                                                 .addComponent(tacosBet, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addComponent(jButton16)))
-                                        .addContainerGap())))))))
+                                        .addContainerGap())))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(58, 58, 58)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel38)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18))))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(confirmar)
+                .addGap(20, 20, 20))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+                .addComponent(jLabel38)
+                .addGap(76, 76, 76)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1540,7 +1679,11 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(jButton51)
                             .addComponent(jButton53)))
                     .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(confirmar)
+                    .addComponent(atras))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         jLabel10.setFont(new java.awt.Font("Bahnschrift", 1, 20)); // NOI18N
@@ -1548,69 +1691,33 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel39.setToolTipText("imagen");
 
-        jLabel38.setFont(new java.awt.Font("Bahnschrift", 0, 15)); // NOI18N
-        jLabel38.setText("BEBIDAS");
-
-        confirmar.setFont(new java.awt.Font("Tw Cen MT Condensed", 0, 18)); // NOI18N
-        confirmar.setText("Confirmar");
-        confirmar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                confirmarActionPerformed(evt);
-            }
-        });
-
-        atras.setText("atras");
-        atras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                atrasActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(245, 245, 245)
-                        .addComponent(jLabel10))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(250, 250, 250)
-                        .addComponent(jLabel38)))
+                .addGap(245, 245, 245)
+                .addComponent(jLabel10)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(atras)
-                        .addGap(359, 359, 359)
-                        .addComponent(confirmar))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(193, 193, 193)
-                            .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(14, 14, 14)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 20, Short.MAX_VALUE))
+                .addGap(193, 193, 193)
+                .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 207, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel38)
-                .addGap(37, 37, 37)
+                .addGap(0, 0, 0)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(atras)
-                    .addComponent(confirmar))
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
         pack();
@@ -1664,482 +1771,89 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox49ActionPerformed
 
-    private void sopaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sopaActionPerformed
-        
-        //double precio = 80;
-        //double total = 0;
-     
-       // cant = Double.parseDouble(sopa.getText());
-       
-        
-        //total = precio*cant;
-      //  precioFinal+=total;
-        
-        
-        
-        
-        
-    }//GEN-LAST:event_sopaActionPerformed
-    private void cheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheesecakeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cheesecakeActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        int suma =Integer.parseInt(sopa.getText()); 
-suma+=1;
-sopa.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        if(sopa.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(sopa.getText()); 
-suma-=1;
-sopa.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void pastaMarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pastaMarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pastaMarActionPerformed
-
-    private void pastaTomateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pastaTomateActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pastaTomateActionPerformed
-
-    private void hongoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hongoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hongoActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        int suma =Integer.parseInt(alcachofa.getText()); 
-suma+=1;
-alcachofa.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        int suma =Integer.parseInt(quesadilla.getText()); 
-suma+=1;
-quesadilla.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        int suma =Integer.parseInt(ensalada.getText()); 
-suma+=1;
-ensalada.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        if(alcachofa.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(alcachofa.getText()); 
-suma-=1;
-alcachofa.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        int suma =Integer.parseInt(calabaza.getText()); 
-suma+=1;
-calabaza.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        int suma =Integer.parseInt(tacosHui.getText()); 
-suma+=1;
-tacosHui.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        int suma =Integer.parseInt(pizza.getText()); 
-suma+=1;
-pizza.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        int suma =Integer.parseInt(hongo.getText()); 
-suma+=1;
-hongo.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        int suma =Integer.parseInt(ribEye.getText()); 
-suma+=1;
-ribEye.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton12ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        int suma =Integer.parseInt(ceviche.getText()); 
-suma+=1;
-ceviche.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-          int suma =Integer.parseInt(pulpo.getText()); 
-suma+=1;
-pulpo.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton14ActionPerformed
-
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-          int suma =Integer.parseInt(ostion.getText()); 
-suma+=1;
-ostion.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton15ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        int suma =Integer.parseInt(tacosBet.getText()); 
-suma+=1;
-tacosBet.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        int suma =Integer.parseInt(tacosArra.getText()); 
-suma+=1;
-tacosArra.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        int suma =Integer.parseInt(carpaccio.getText()); 
-suma+=1;
-carpaccio.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton18ActionPerformed
-
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-       int suma =Integer.parseInt(pastaTomate.getText()); 
-suma+=1;
-pastaTomate.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton19ActionPerformed
-
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-     int suma =Integer.parseInt(pastaMar.getText()); 
-suma+=1;
-pastaMar.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton20ActionPerformed
-
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-       int suma =Integer.parseInt(rissottoAlcachofa.getText()); 
-suma+=1;
-rissottoAlcachofa.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton21ActionPerformed
-
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        int suma =Integer.parseInt(rissottoParm.getText()); 
-suma+=1;
-rissottoParm.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton22ActionPerformed
-
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-       int suma =Integer.parseInt(pez.getText()); 
-suma+=1;
-pez.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton23ActionPerformed
-
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        int suma =Integer.parseInt(lomo.getText()); 
-suma+=1;
-lomo.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton24ActionPerformed
-
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        int suma =Integer.parseInt(brownie.getText()); 
-suma+=1;
-brownie.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton25ActionPerformed
-
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-       int suma =Integer.parseInt(flan.getText()); 
-suma+=1;
-flan.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton26ActionPerformed
-
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        int suma =Integer.parseInt(cheesecake.getText()); 
-suma+=1;
-cheesecake.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton27ActionPerformed
-
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        int suma =Integer.parseInt(nieve.getText()); 
-suma+=1;
-nieve.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton28ActionPerformed
-
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        int suma =Integer.parseInt(newYork.getText()); 
-suma+=1;
-newYork.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton29ActionPerformed
-
-    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
- if(quesadilla.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(quesadilla.getText()); 
-suma-=1;
-quesadilla.setText(String.valueOf(suma));       
-    }//GEN-LAST:event_jButton30ActionPerformed
-
-    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-         if(calabaza.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(calabaza.getText()); 
-suma-=1;
-calabaza.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton31ActionPerformed
-
-    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-         if(ensalada.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(ensalada.getText()); 
-suma-=1;
-ensalada.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton32ActionPerformed
-
-    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
-         if(tacosHui.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(tacosHui.getText()); 
-suma-=1;
-tacosHui.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton33ActionPerformed
-
-    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
-         if(pizza.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(pizza.getText()); 
-suma-=1;
-pizza.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton35ActionPerformed
-
-    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
-         if(hongo.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(hongo.getText()); 
-suma-=1;
-hongo.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton34ActionPerformed
-
-    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
-        if(pastaTomate.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(pastaTomate.getText()); 
-suma-=1;
-pastaTomate.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton43ActionPerformed
-
-    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
-        if(pastaMar.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(pastaMar.getText()); 
-suma-=1;
-pastaMar.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton44ActionPerformed
-
-    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
-        if(rissottoAlcachofa.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(rissottoAlcachofa.getText()); 
-suma-=1;
-rissottoAlcachofa.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton45ActionPerformed
-
-    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
-         if(rissottoParm.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(rissottoParm.getText()); 
-suma-=1;
-rissottoParm.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton46ActionPerformed
-
-    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
-         if(pez.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(pez.getText()); 
-suma-=1;
-pez.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton47ActionPerformed
-
-    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
-        if(lomo.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(lomo.getText()); 
-suma-=1;
-lomo.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton48ActionPerformed
-
-    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
-        if(newYork.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(newYork.getText()); 
-suma-=1;
-newYork.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton49ActionPerformed
-
-    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
-        if(ribEye.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(ribEye.getText()); 
-suma-=1;
-ribEye.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton36ActionPerformed
-
-    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
-        if(ceviche.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(ceviche.getText()); 
-suma-=1;
-ceviche.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton37ActionPerformed
-
-    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
-        if(pulpo.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(pulpo.getText()); 
-suma-=1;
-pulpo.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton38ActionPerformed
-
-    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
-        if(ostion.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(ostion.getText()); 
-suma-=1;
-ostion.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton39ActionPerformed
-
-    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
-       if(tacosBet.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(tacosBet.getText()); 
-suma-=1;
-tacosBet.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton40ActionPerformed
-
-    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
-       if(tacosArra.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(tacosArra.getText()); 
-suma-=1;
-tacosArra.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton41ActionPerformed
-
-    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
-        if(carpaccio.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(carpaccio.getText()); 
-suma-=1;
-carpaccio.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton42ActionPerformed
-
-    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
-        if(brownie.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(brownie.getText()); 
-suma-=1;
-brownie.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton50ActionPerformed
-
-    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
-      if(flan.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(flan.getText()); 
-suma-=1;
-flan.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton51ActionPerformed
-
-    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
-        if(cheesecake.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(cheesecake.getText()); 
-suma-=1;
-cheesecake.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton52ActionPerformed
-
-    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
-        if(nieve.getText().equals("0")){
-            return;        }
-        int suma =Integer.parseInt(nieve.getText()); 
-suma-=1;
-nieve.setText(String.valueOf(suma));
-    }//GEN-LAST:event_jButton53ActionPerformed
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_atrasActionPerformed
 
     private void confirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmarActionPerformed
         int sopas = Integer.parseInt(sopa.getText());
         Productos sopa = new Productos("sopa", sopas*80, sopas);
-        
+
         int alcachofas = Integer.parseInt(alcachofa.getText());
         Productos alcachofa = new Productos("alcachofa", alcachofas*90, alcachofas);
-        
+
         int quesadillas = Integer.parseInt(quesadilla.getText());
         Productos quesadilla = new Productos("quesadillas brie", quesadillas*110, quesadillas);
-        
+
         int ensaladas = Integer.parseInt(ensalada.getText());
         Productos ensalada = new Productos("ensalada verde", ensaladas*90, ensaladas);
-        
+
         int calabazas = Integer.parseInt(calabaza.getText());
         Productos calabaza = new Productos("calabazas asadas", calabazas*110, calabazas);
-        
+
         int tacosHuitlacoche = Integer.parseInt(tacosHui.getText());
         Productos tacosHui = new Productos("tacos de huitlacoche", tacosHuitlacoche*130, tacosHuitlacoche);
-        
+
         int pizzas = Integer.parseInt(pizza.getText());
         Productos pizza = new Productos("pizza con hongos", pizzas*125, pizzas);
-        
+
         int hongos = Integer.parseInt(hongo.getText());
         Productos hongo = new Productos("hongos capeados", hongos*105, hongos);
-        
+
         int pastasTomate = Integer.parseInt(pastaTomate.getText());
         Productos pastaTomate = new Productos("pasta de tomate", pastasTomate*160, pastasTomate);
-        
+
         int pastasMar = Integer.parseInt(pastaMar.getText());
         Productos pastaMar = new Productos("pasta de mar", pastasMar*195, pastasMar);
-        
+
         int rissottosAlcachofa = Integer.parseInt(rissottoAlcachofa.getText());
         Productos rissottoAlcachofa = new Productos("rissotto de alcachofa", rissottosAlcachofa*220, rissottosAlcachofa);
-        
+
         int rissottosParm = Integer.parseInt(rissottoParm.getText());
         Productos rissottoParm = new Productos("rissoto parmesano", rissottosParm*200, rissottosParm);
-        
+
         int peces = Integer.parseInt(pez.getText());
         Productos pez = new Productos("pez del dia", peces*210, peces);
-        
+
         int lomosCerdo = Integer.parseInt(lomo.getText());
         Productos lomo = new Productos("lomo de cerdo", lomosCerdo*225, lomosCerdo);
-        
+
         int newYorks = Integer.parseInt(newYork.getText());
         Productos newYork = new Productos("new york", newYorks*370, newYorks);
-        
+
         int ribEyes = Integer.parseInt(ribEye.getText());
         Productos ribEye = new Productos("prime rib eye", ribEyes*950, ribEyes);
-        
+
         int ceviches = Integer.parseInt(ceviche.getText());
         Productos ceviche = new Productos("ceviche", ceviches*190, ceviches);
-        
+
         int pulpos = Integer.parseInt(pulpo.getText());
         Productos pulpo = new Productos("pulpo al cilantro", pulpos*190, pulpos);
-        
+
         int ostiones = Integer.parseInt(ostion.getText());
         Productos ostion = new Productos("ostiones", ostiones*180, ostiones);
-        
+
         int tacosBetabel = Integer.parseInt(tacosBet.getText());
         Productos tacoBetabel = new Productos("tacos de betabel", tacosBetabel*140, tacosBetabel);
-        
+
         int tacosArrachera = Integer.parseInt(tacosArra.getText());
         Productos tacoArrachera= new Productos("tacos de arrachera", tacosArrachera*190, tacosArrachera);
-        
+
         int carpaccios = Integer.parseInt(carpaccio.getText());
         Productos carpaccio = new Productos("carpaccio de res", carpaccios*240, carpaccios);
-        
+
         int brownies = Integer.parseInt(brownie.getText());
         Productos brownie = new Productos("brownie", brownies*95, brownies);
-        
+
         int flanes = Integer.parseInt(flan.getText());
         Productos flan = new Productos("flan", flanes*95, flanes);
-        
+
         int cheesecakes = Integer.parseInt(cheesecake.getText());
         Productos cheesecake = new Productos("cheesecake", cheesecakes*95, cheesecakes);
-        
+
         int nieves = Integer.parseInt(nieve.getText());
         Productos nieve = new Productos("nieve", nieves*95, nieves);
-        
-        
+
         /*if(sopas!=0){
             sopas *=80;
         }
@@ -2218,54 +1932,434 @@ nieve.setText(String.valueOf(suma));
         if(nieves!=0){
             nieves*=95;
         }*/
-        
-       Orden ordenes = new Orden();
-       ordenes.agregarProducto(sopa);
-       ordenes.agregarProducto(alcachofa);
-       ordenes.agregarProducto(quesadilla);
-       ordenes.agregarProducto(ensalada);
-       ordenes.agregarProducto(calabaza);
-       ordenes.agregarProducto(tacosHui);
-       ordenes.agregarProducto(pizza);
-       ordenes.agregarProducto(hongo);
-       ordenes.agregarProducto(pastaTomate);
-       ordenes.agregarProducto(pastaMar);
-       ordenes.agregarProducto(rissottoAlcachofa);
-       ordenes.agregarProducto(rissottoParm);
-       ordenes.agregarProducto(pez);
-       ordenes.agregarProducto(lomo);
-       ordenes.agregarProducto(newYork);
-       ordenes.agregarProducto(ribEye);
-       ordenes.agregarProducto(ceviche);
-       ordenes.agregarProducto(pulpo);
-       ordenes.agregarProducto(ostion);
-       ordenes.agregarProducto(tacoBetabel);
-       ordenes.agregarProducto(tacoArrachera);
-       ordenes.agregarProducto(carpaccio);
-       ordenes.agregarProducto(brownie);
-       ordenes.agregarProducto(flan);
-       ordenes.agregarProducto(cheesecake);
-       ordenes.agregarProducto(nieve);
-               
-       
-       double cuenta = sopa.getPrecio()+alcachofa.getPrecio()+quesadilla.getPrecio()+ensalada.getPrecio()+calabaza.getPrecio()+tacosHui.getPrecio()+pizza.getPrecio()+hongo.getPrecio()+pastaTomate.getPrecio()+pastaMar.getPrecio()+rissottoAlcachofa.getPrecio()+rissottoParm.getPrecio()+pez.getPrecio()+lomo.getPrecio()+newYork.getPrecio()+ribEye.getPrecio()+ceviche.getPrecio()+pulpo.getPrecio()+ostion.getPrecio()+tacoBetabel.getPrecio()+tacoArrachera.getPrecio()+carpaccio.getPrecio()+brownie.getPrecio()+flan.getPrecio()+cheesecake.getPrecio()+nieve.getPrecio();
-       
-       Confirmar c = new Confirmar();
-       c.setVisible(true);
-       setVisible(false);
-       
-       c.setUpOrdenes(ordenes);
-       
-       
-       
-      
-        
+
+        Orden ordenes = new Orden();
+        ordenes.agregarProducto(sopa);
+        ordenes.agregarProducto(alcachofa);
+        ordenes.agregarProducto(quesadilla);
+        ordenes.agregarProducto(ensalada);
+        ordenes.agregarProducto(calabaza);
+        ordenes.agregarProducto(tacosHui);
+        ordenes.agregarProducto(pizza);
+        ordenes.agregarProducto(hongo);
+        ordenes.agregarProducto(pastaTomate);
+        ordenes.agregarProducto(pastaMar);
+        ordenes.agregarProducto(rissottoAlcachofa);
+        ordenes.agregarProducto(rissottoParm);
+        ordenes.agregarProducto(pez);
+        ordenes.agregarProducto(lomo);
+        ordenes.agregarProducto(newYork);
+        ordenes.agregarProducto(ribEye);
+        ordenes.agregarProducto(ceviche);
+        ordenes.agregarProducto(pulpo);
+        ordenes.agregarProducto(ostion);
+        ordenes.agregarProducto(tacoBetabel);
+        ordenes.agregarProducto(tacoArrachera);
+        ordenes.agregarProducto(carpaccio);
+        ordenes.agregarProducto(brownie);
+        ordenes.agregarProducto(flan);
+        ordenes.agregarProducto(cheesecake);
+        ordenes.agregarProducto(nieve);
+
+        double cuenta = sopa.getPrecio()+alcachofa.getPrecio()+quesadilla.getPrecio()+ensalada.getPrecio()+calabaza.getPrecio()+tacosHui.getPrecio()+pizza.getPrecio()+hongo.getPrecio()+pastaTomate.getPrecio()+pastaMar.getPrecio()+rissottoAlcachofa.getPrecio()+rissottoParm.getPrecio()+pez.getPrecio()+lomo.getPrecio()+newYork.getPrecio()+ribEye.getPrecio()+ceviche.getPrecio()+pulpo.getPrecio()+ostion.getPrecio()+tacoBetabel.getPrecio()+tacoArrachera.getPrecio()+carpaccio.getPrecio()+brownie.getPrecio()+flan.getPrecio()+cheesecake.getPrecio()+nieve.getPrecio();
+
+        Confirmar c = new Confirmar();
+        c.setVisible(true);
+        setVisible(false);
+
+        c.setUpOrdenes(ordenes);
     }//GEN-LAST:event_confirmarActionPerformed
 
-    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
-        setVisible(false);
-        
-    }//GEN-LAST:event_atrasActionPerformed
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+        if(nieve.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(nieve.getText());
+        suma-=1;
+        nieve.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+        if(cheesecake.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(cheesecake.getText());
+        suma-=1;
+        cheesecake.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton52ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        if(flan.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(flan.getText());
+        suma-=1;
+        flan.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton51ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        if(brownie.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(brownie.getText());
+        suma-=1;
+        brownie.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        if(newYork.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(newYork.getText());
+        suma-=1;
+        newYork.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        if(lomo.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(lomo.getText());
+        suma-=1;
+        lomo.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        if(pez.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(pez.getText());
+        suma-=1;
+        pez.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
+        if(rissottoParm.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(rissottoParm.getText());
+        suma-=1;
+        rissottoParm.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton46ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        if(rissottoAlcachofa.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(rissottoAlcachofa.getText());
+        suma-=1;
+        rissottoAlcachofa.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        if(pastaMar.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(pastaMar.getText());
+        suma-=1;
+        pastaMar.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        if(pastaTomate.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(pastaTomate.getText());
+        suma-=1;
+        pastaTomate.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        if(carpaccio.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(carpaccio.getText());
+        suma-=1;
+        carpaccio.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        if(tacosArra.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(tacosArra.getText());
+        suma-=1;
+        tacosArra.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        if(tacosBet.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(tacosBet.getText());
+        suma-=1;
+        tacosBet.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        if(ostion.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(ostion.getText());
+        suma-=1;
+        ostion.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        if(pulpo.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(pulpo.getText());
+        suma-=1;
+        pulpo.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        if(ceviche.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(ceviche.getText());
+        suma-=1;
+        ceviche.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        if(ribEye.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(ribEye.getText());
+        suma-=1;
+        ribEye.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        if(pizza.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(pizza.getText());
+        suma-=1;
+        pizza.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        if(hongo.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(hongo.getText());
+        suma-=1;
+        hongo.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        if(tacosHui.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(tacosHui.getText());
+        suma-=1;
+        tacosHui.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        if(ensalada.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(ensalada.getText());
+        suma-=1;
+        ensalada.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        if(calabaza.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(calabaza.getText());
+        suma-=1;
+        calabaza.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        if(quesadilla.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(quesadilla.getText());
+        suma-=1;
+        quesadilla.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        int suma =Integer.parseInt(newYork.getText());
+        suma+=1;
+        newYork.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        int suma =Integer.parseInt(nieve.getText());
+        suma+=1;
+        nieve.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        int suma =Integer.parseInt(cheesecake.getText());
+        suma+=1;
+        cheesecake.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        int suma =Integer.parseInt(flan.getText());
+        suma+=1;
+        flan.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        int suma =Integer.parseInt(brownie.getText());
+        suma+=1;
+        brownie.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        int suma =Integer.parseInt(lomo.getText());
+        suma+=1;
+        lomo.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        int suma =Integer.parseInt(pez.getText());
+        suma+=1;
+        pez.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        int suma =Integer.parseInt(rissottoParm.getText());
+        suma+=1;
+        rissottoParm.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        int suma =Integer.parseInt(rissottoAlcachofa.getText());
+        suma+=1;
+        rissottoAlcachofa.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        int suma =Integer.parseInt(pastaMar.getText());
+        suma+=1;
+        pastaMar.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        int suma =Integer.parseInt(pastaTomate.getText());
+        suma+=1;
+        pastaTomate.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        int suma =Integer.parseInt(carpaccio.getText());
+        suma+=1;
+        carpaccio.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        int suma =Integer.parseInt(tacosArra.getText());
+        suma+=1;
+        tacosArra.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        int suma =Integer.parseInt(tacosBet.getText());
+        suma+=1;
+        tacosBet.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        int suma =Integer.parseInt(ostion.getText());
+        suma+=1;
+        ostion.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        int suma =Integer.parseInt(pulpo.getText());
+        suma+=1;
+        pulpo.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        int suma =Integer.parseInt(ceviche.getText());
+        suma+=1;
+        ceviche.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        int suma =Integer.parseInt(ribEye.getText());
+        suma+=1;
+        ribEye.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        int suma =Integer.parseInt(hongo.getText());
+        suma+=1;
+        hongo.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        int suma =Integer.parseInt(pizza.getText());
+        suma+=1;
+        pizza.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        int suma =Integer.parseInt(tacosHui.getText());
+        suma+=1;
+        tacosHui.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        int suma =Integer.parseInt(calabaza.getText());
+        suma+=1;
+        calabaza.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        if(alcachofa.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(alcachofa.getText());
+        suma-=1;
+        alcachofa.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        int suma =Integer.parseInt(ensalada.getText());
+        suma+=1;
+        ensalada.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        int suma =Integer.parseInt(quesadilla.getText());
+        suma+=1;
+        quesadilla.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        int suma =Integer.parseInt(alcachofa.getText());
+        suma+=1;
+        alcachofa.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        if(sopa.getText().equals("0")){
+            return;        }
+        int suma =Integer.parseInt(sopa.getText());
+        suma-=1;
+        sopa.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        int suma =Integer.parseInt(sopa.getText());
+        suma+=1;
+        sopa.setText(String.valueOf(suma));
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void cheesecakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheesecakeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cheesecakeActionPerformed
+
+    private void pastaMarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pastaMarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pastaMarActionPerformed
+
+    private void pastaTomateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pastaTomateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pastaTomateActionPerformed
+
+    private void hongoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hongoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hongoActionPerformed
+
+    private void sopaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sopaActionPerformed
+
+        //double precio = 80;
+        //double total = 0;
+
+        // cant = Double.parseDouble(sopa.getText());
+
+        //total = precio*cant;
+        //  precioFinal+=total;
+    }//GEN-LAST:event_sopaActionPerformed
 
     /**
      * @param args the command line arguments
