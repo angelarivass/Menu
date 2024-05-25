@@ -29,13 +29,14 @@ public class paginaPrincipal extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         boules = new javax.swing.JLabel();
-        sobreNosotros = new javax.swing.JButton();
-        menu = new javax.swing.JButton();
-        reserva = new javax.swing.JButton();
-        realizarPedido = new javax.swing.JButton();
+        msjBtn = new javax.swing.JButton();
+        menuvistaBtn = new javax.swing.JButton();
+        reservarBtn = new javax.swing.JButton();
+        pedirBtn = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         modernKitchen = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        verBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -46,43 +47,43 @@ public class paginaPrincipal extends javax.swing.JFrame {
         boules.setForeground(new java.awt.Color(255, 255, 255));
         boules.setText("B O U L E S");
 
-        sobreNosotros.setBackground(new java.awt.Color(0, 37, 51));
-        sobreNosotros.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
-        sobreNosotros.setForeground(new java.awt.Color(255, 255, 255));
-        sobreNosotros.setText("Sobre nosotros");
-        sobreNosotros.addActionListener(new java.awt.event.ActionListener() {
+        msjBtn.setBackground(new java.awt.Color(0, 37, 51));
+        msjBtn.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
+        msjBtn.setForeground(new java.awt.Color(255, 255, 255));
+        msjBtn.setText("Sobre nosotros");
+        msjBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sobreNosotrosActionPerformed(evt);
+                msjBtnActionPerformed(evt);
             }
         });
 
-        menu.setBackground(new java.awt.Color(0, 38, 51));
-        menu.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
-        menu.setForeground(new java.awt.Color(255, 255, 255));
-        menu.setText("Menú");
-        menu.addActionListener(new java.awt.event.ActionListener() {
+        menuvistaBtn.setBackground(new java.awt.Color(0, 38, 51));
+        menuvistaBtn.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
+        menuvistaBtn.setForeground(new java.awt.Color(255, 255, 255));
+        menuvistaBtn.setText("Menú");
+        menuvistaBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuActionPerformed(evt);
+                menuvistaBtnActionPerformed(evt);
             }
         });
 
-        reserva.setBackground(new java.awt.Color(0, 37, 51));
-        reserva.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
-        reserva.setForeground(new java.awt.Color(255, 255, 255));
-        reserva.setText("Reservar");
-        reserva.addActionListener(new java.awt.event.ActionListener() {
+        reservarBtn.setBackground(new java.awt.Color(0, 37, 51));
+        reservarBtn.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
+        reservarBtn.setForeground(new java.awt.Color(255, 255, 255));
+        reservarBtn.setText("Reservar");
+        reservarBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                reservaActionPerformed(evt);
+                reservarBtnActionPerformed(evt);
             }
         });
 
-        realizarPedido.setBackground(new java.awt.Color(0, 37, 51));
-        realizarPedido.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
-        realizarPedido.setForeground(new java.awt.Color(255, 255, 255));
-        realizarPedido.setText("Realizar pedido");
-        realizarPedido.addActionListener(new java.awt.event.ActionListener() {
+        pedirBtn.setBackground(new java.awt.Color(0, 37, 51));
+        pedirBtn.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
+        pedirBtn.setForeground(new java.awt.Color(255, 255, 255));
+        pedirBtn.setText("Realizar pedido");
+        pedirBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                realizarPedidoActionPerformed(evt);
+                pedirBtnActionPerformed(evt);
             }
         });
 
@@ -90,7 +91,15 @@ public class paginaPrincipal extends javax.swing.JFrame {
         modernKitchen.setForeground(new java.awt.Color(255, 255, 255));
         modernKitchen.setText("m  o  d  e  r  n   k  i  t  c  h  e  n ");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/andreamoran/Downloads/imagenBoules.jpeg")); // NOI18N
+        verBtn.setBackground(new java.awt.Color(0, 37, 51));
+        verBtn.setFont(new java.awt.Font("Apple SD Gothic Neo", 0, 13)); // NOI18N
+        verBtn.setForeground(new java.awt.Color(255, 255, 255));
+        verBtn.setText("Ver ordenes");
+        verBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -107,12 +116,13 @@ public class paginaPrincipal extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(94, 94, 94)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(sobreNosotros, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(msjBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(realizarPedido, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                            .addComponent(reserva, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(menuvistaBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(pedirBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
+                            .addComponent(reservarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(verBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(99, 99, 99)
                         .addComponent(boules)))
@@ -130,14 +140,16 @@ public class paginaPrincipal extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
-                .addComponent(realizarPedido)
+                .addComponent(pedirBtn)
                 .addGap(18, 18, 18)
-                .addComponent(reserva)
+                .addComponent(reservarBtn)
                 .addGap(18, 18, 18)
-                .addComponent(menu)
+                .addComponent(menuvistaBtn)
                 .addGap(18, 18, 18)
-                .addComponent(sobreNosotros)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addComponent(msjBtn)
+                .addGap(18, 18, 18)
+                .addComponent(verBtn)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -154,41 +166,45 @@ public class paginaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void sobreNosotrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sobreNosotrosActionPerformed
+    private void msjBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_msjBtnActionPerformed
         // TODO add your handling code here:
         
         sobreBoules sN = new sobreBoules();
         sN.setVisible(true);
         setVisible(false);
         
-    }//GEN-LAST:event_sobreNosotrosActionPerformed
+    }//GEN-LAST:event_msjBtnActionPerformed
 
-    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
+    private void menuvistaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuvistaBtnActionPerformed
         // TODO add your handling code here:
         
         vistaMenu vM = new vistaMenu();
         vM.setVisible(true);
         setVisible(false);
         
-    }//GEN-LAST:event_menuActionPerformed
+    }//GEN-LAST:event_menuvistaBtnActionPerformed
 
-    private void reservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservaActionPerformed
+    private void reservarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarBtnActionPerformed
         // TODO add your handling code here:
         
         reservar r = new reservar();
         r.setVisible(true);
         setVisible(false);
         
-    }//GEN-LAST:event_reservaActionPerformed
+    }//GEN-LAST:event_reservarBtnActionPerformed
 
-    private void realizarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_realizarPedidoActionPerformed
+    private void pedirBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pedirBtnActionPerformed
         // TODO add your handling code here:
         
         pedidosFrame pF = new pedidosFrame();
         pF.setVisible(true);
         setVisible(false);
         
-    }//GEN-LAST:event_realizarPedidoActionPerformed
+    }//GEN-LAST:event_pedirBtnActionPerformed
+
+    private void verBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_verBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -230,10 +246,11 @@ public class paginaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JButton menu;
+    private javax.swing.JButton menuvistaBtn;
     private javax.swing.JLabel modernKitchen;
-    private javax.swing.JButton realizarPedido;
-    private javax.swing.JButton reserva;
-    private javax.swing.JButton sobreNosotros;
+    private javax.swing.JButton msjBtn;
+    private javax.swing.JButton pedirBtn;
+    private javax.swing.JButton reservarBtn;
+    private javax.swing.JButton verBtn;
     // End of variables declaration//GEN-END:variables
 }

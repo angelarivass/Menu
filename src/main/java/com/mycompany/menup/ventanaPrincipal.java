@@ -45,119 +45,174 @@ public class ventanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        boules = new javax.swing.JLabel();
+        modernKitchen = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        modernKitchen1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        boules1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton5 = new javax.swing.JButton();
+        modernKitchen2 = new javax.swing.JLabel();
+        msjBtn = new javax.swing.JButton();
+        menuvistaBtn = new javax.swing.JButton();
+        reservarBtn = new javax.swing.JButton();
+        pedirBtn = new javax.swing.JButton();
+        verBtn = new javax.swing.JButton();
+
+        boules.setFont(new java.awt.Font("Academy Engraved LET", 0, 30)); // NOI18N
+        boules.setForeground(new java.awt.Color(255, 255, 255));
+        boules.setText("B O U L E S");
+
+        modernKitchen.setFont(new java.awt.Font("Academy Engraved LET", 0, 10)); // NOI18N
+        modernKitchen.setForeground(new java.awt.Color(255, 255, 255));
+        modernKitchen.setText("m  o  d  e  r  n   k  i  t  c  h  e  n ");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 0, 0));
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 20)); // NOI18N
-        jLabel1.setText("BOULES RESTAURANTE");
+        modernKitchen1.setFont(new java.awt.Font("Academy Engraved LET", 0, 10)); // NOI18N
+        modernKitchen1.setForeground(new java.awt.Color(255, 255, 255));
+        modernKitchen1.setText("m  o  d  e  r  n   k  i  t  c  h  e  n ");
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 204));
-        jButton1.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Un mensaje de Boules");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        jButton2.setBackground(new java.awt.Color(0, 153, 204));
-        jButton2.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Reservar una mesa");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setBackground(new java.awt.Color(0, 153, 204));
-        jButton3.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Menú");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setBackground(new java.awt.Color(0, 153, 204));
-        jButton4.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Hacer pedido de platillos");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
+        boules1.setFont(new java.awt.Font("Academy Engraved LET", 0, 30)); // NOI18N
+        boules1.setForeground(new java.awt.Color(255, 255, 255));
+        boules1.setText("B O U L E S");
 
         jSeparator1.setForeground(new java.awt.Color(204, 204, 204));
 
-        jButton5.setBackground(new java.awt.Color(0, 153, 204));
-        jButton5.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Ver ordenes");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        modernKitchen2.setFont(new java.awt.Font("Academy Engraved LET", 0, 10)); // NOI18N
+        modernKitchen2.setForeground(new java.awt.Color(255, 255, 255));
+        modernKitchen2.setText("m  o  d  e  r  n   k  i  t  c  h  e  n ");
+
+        msjBtn.setBackground(new java.awt.Color(0, 0, 51));
+        msjBtn.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
+        msjBtn.setForeground(new java.awt.Color(255, 255, 255));
+        msjBtn.setText("Sobre nosotros");
+        msjBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                msjBtnActionPerformed(evt);
             }
         });
+
+        menuvistaBtn.setBackground(new java.awt.Color(0, 0, 51));
+        menuvistaBtn.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
+        menuvistaBtn.setForeground(new java.awt.Color(255, 255, 255));
+        menuvistaBtn.setText("Menú");
+        menuvistaBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuvistaBtnActionPerformed(evt);
+            }
+        });
+
+        reservarBtn.setBackground(new java.awt.Color(0, 0, 51));
+        reservarBtn.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
+        reservarBtn.setForeground(new java.awt.Color(255, 255, 255));
+        reservarBtn.setText("Reservar una mesa");
+        reservarBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reservarBtnActionPerformed(evt);
+            }
+        });
+
+        pedirBtn.setBackground(new java.awt.Color(0, 0, 51));
+        pedirBtn.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
+        pedirBtn.setForeground(new java.awt.Color(255, 255, 255));
+        pedirBtn.setText("Hacer orden de platillos");
+        pedirBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pedirBtnActionPerformed(evt);
+            }
+        });
+
+        verBtn.setBackground(new java.awt.Color(0, 0, 51));
+        verBtn.setFont(new java.awt.Font("Bahnschrift", 0, 12)); // NOI18N
+        verBtn.setForeground(new java.awt.Color(255, 255, 255));
+        verBtn.setText("Ver ordenes");
+        verBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                verBtnActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(boules1)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(modernKitchen2))))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(verBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                            .addGap(94, 94, 94)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(menuvistaBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(msjBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(reservarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(pedirBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(boules1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(modernKitchen2)
+                .addGap(7, 7, 7)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
+                .addComponent(msjBtn)
+                .addGap(18, 18, 18)
+                .addComponent(menuvistaBtn)
+                .addGap(18, 18, 18)
+                .addComponent(reservarBtn)
+                .addGap(18, 18, 18)
+                .addComponent(pedirBtn)
+                .addGap(18, 18, 18)
+                .addComponent(verBtn)
+                .addGap(18, 18, 18))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jButton5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(modernKitchen1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addGap(18, 18, 18)
-                .addComponent(jButton5)
-                .addGap(57, 57, 57))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(0, 0, 0)
+                        .addComponent(modernKitchen1)))
+                .addGap(0, 0, 0))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void msjBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_msjBtnActionPerformed
        sobreBoules s = new sobreBoules();
        s.setVisible(true);
         /*  setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -183,32 +238,32 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(this, scrollPane);
         */
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_msjBtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void menuvistaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuvistaBtnActionPerformed
        // MenuVistaa menu = new MenuVistaa();
        vistaMenu menu = new vistaMenu(); 
        menu.setVisible(true);
-        setVisible(false);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        
+    }//GEN-LAST:event_menuvistaBtnActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void pedirBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pedirBtnActionPerformed
        Menu m = new Menu(r);
        m.setVisible(true);
        //setVisible(false);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_pedirBtnActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void reservarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarBtnActionPerformed
         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_reservarBtnActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void verBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verBtnActionPerformed
       // JOptionPane.showMessageDialog(null, "Las ordenes son"+"\n"+rest.getListaOrdenes().size());
       VerOrdenes v = new VerOrdenes();
       v.setVisible(true);
       
              
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_verBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,12 +281,18 @@ public class ventanaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JLabel boules;
+    private javax.swing.JLabel boules1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JButton menuvistaBtn;
+    private javax.swing.JLabel modernKitchen;
+    private javax.swing.JLabel modernKitchen1;
+    private javax.swing.JLabel modernKitchen2;
+    private javax.swing.JButton msjBtn;
+    private javax.swing.JButton pedirBtn;
+    private javax.swing.JButton reservarBtn;
+    private javax.swing.JButton verBtn;
     // End of variables declaration//GEN-END:variables
 }
