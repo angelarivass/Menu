@@ -9,10 +9,11 @@ package Default;
  *
  * @author andreamoran
  */
+
 public class reservar extends javax.swing.JFrame {
 
     /**
-     * Creates new form reservar
+     * Creates new form 
      */
     public reservar() {
         initComponents();
@@ -220,6 +221,9 @@ public class reservar extends javax.swing.JFrame {
 //        Reservaciones r = new Reservaciones();
         
        
+
+        Reservaciones r = new Reservaciones();
+//        r.crearReservacion(reservacion);
         
     }//GEN-LAST:event_completarReservacionActionPerformed
 
@@ -264,10 +268,8 @@ public class reservar extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new reservar().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new reservar().setVisible(true);
         });
     }
 
